@@ -1,0 +1,40 @@
+<div id="cabeca">
+
+  <h1>BUSCAR LETRAS</h1>
+  <img id="imagem_topo" src="/assets/projeto_letras/01.png" alt="logo">
+
+  <div id="busca_artista">
+    <label>Artista</label>
+    <input [value]="artist" name="artist" [(ngModel)]="artist">
+  </div>
+
+  <div id="busca_musicas">
+    <label>Musicas</label>
+    <input [value]="music" name="music" [(ngModel)]="music">
+  </div>
+
+  <div style="display: inline-grid; margin-top: 16px;">
+    <button (click)="findLyrics()">BUSCAR</button>
+  </div>
+</div>
+
+<body>
+
+  <h1>{{titleMusic}}</h1>
+  <h5>{{artistMusic}}</h5>
+
+  <div id="photo">
+    <pre>{{artistphoto}}</pre>
+  </div>
+
+  <div id="texto_original">
+    <pre>{{lyricMusic}}</pre>
+
+  </div>
+
+  <div id="texto_traduzido">
+    <pre>{{translateMusic}}</pre>
+  </div>
+
+</body>
+

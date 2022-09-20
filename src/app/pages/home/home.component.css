@@ -1,0 +1,29 @@
+#cabeca {
+  display: grid;
+  justify-content: space-around;
+  background-color: rgb(141, 133, 133);
+
+}
+#imagem_topo {
+  position: absolute;
+}
+
+#busca_artista {
+  display: inline-grid;
+  text-align: center;
+}
+
+#busca_musicas {
+  display: inline-grid;
+  text-align: center;
+}
+
+#texto_original {
+  width:290px;
+  float:left
+}
+
+#texto_traduzido {
+  width:290px;
+  float:right;
+}
