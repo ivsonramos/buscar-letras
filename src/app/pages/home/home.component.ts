@@ -15,6 +15,8 @@ export class HomeComponent implements OnInit {
   translateMusic: string = '';
   artistMusic: string = '';
   artistphoto: string = '';
+  img: string = '';
+  link: string = '';
 
 
   constructor(private homeService: HomeService) { }
@@ -30,10 +32,13 @@ export class HomeComponent implements OnInit {
           this.titleMusic = 'Não foi possivel encontrar nenhum resultado'
         } else {
           console.log('Sucesso', result)
+          this.translateMusic = "";
           this.lyricMusic = result.mus[0].text;
           this.artistMusic = result.art.name;
           this.titleMusic = result.mus[0].name;
-        //  this.artistphoto = result.art[2].name;
+          this.artistphoto = result.art.id;
+          this.bringImage();
+          this.link = "https://www.cifraclub.com.br/" + result.mus[0].url.split('br')[1].split('.')[0];
 
         }
         if(result.mus[0].translate){
@@ -48,4 +53,13 @@ export class HomeComponent implements OnInit {
 
   }
 
+  bringImage(){
+    let artist = this.artistphoto;
+
+    this.homeService.getImg(artist).subscribe(
+          (img: any) => {
+            this.img= img.images[0].url;
+          }
+    );
+  }
 }

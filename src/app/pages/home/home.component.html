@@ -23,8 +23,9 @@
   <h1>{{titleMusic}}</h1>
   <h5>{{artistMusic}}</h5>
 
-  <div id="photo">
-    <pre>{{artistphoto}}</pre>
+  <div *ngIf="img" class="artist">
+    <img class="img" [src]="img">
+    <p><a [href]="link">cifra</a></p>
   </div>
 
   <div id="texto_original">
