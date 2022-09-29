@@ -19,19 +19,18 @@
 </div>
 
 <body>
+  <main>
 
-  <h1>{{titleMusic}}</h1>
-  <h5>{{artistMusic}}</h5>
+  <h1>{{artistMusic}}  {{titleMusic}}</h1>
 
   <div *ngIf="img" class="artist">
-    <img class="img" [src]="img">
-    <p><a [href]="link">cifra</a></p>
+    <img class="img" [src]="img" height="420" width="360">
+    <p><a [href]="link">Cifra</a> &nbsp; <a [href]="musicPlayer">Musica</a></p>
   </div>
 
 
-  <div *ngIf="musicplayer" class="reproduzir">
-    <iframe width="426" height="240" [src]="musicplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p><a [href]="musicplayer">Musica</a></p>
+  <div *ngIf="musicPlayer" class="reproduzir">
+    <iframe width="426" height="240" [src]="musicPlayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 
   <div id="texto_original">
@@ -43,5 +42,7 @@
     <pre>{{translateMusic}}</pre>
   </div>
 
+
+  </main>
 </body>
 

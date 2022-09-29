@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
   artistphoto: string = '';
   img: string = '';
   link: string = '';
-  musicplayer: string = '';
+  musicPlayer: string = '';
 
 
   constructor(private homeService: HomeService) { }
@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit {
           this.artistphoto = result.art.id;
           this.bringImage();
           this.link = "https://www.cifraclub.com.br/" + result.mus[0].url.split('br')[1].split('.')[0];
-          this.musicplayer = "https://www.ouvirmusica.com.br/" + result.mus[0].url.split('br')[1].split('.')[0];
+          this.musicPlayer = "https://www.ouvirmusica.com.br" + result.mus[0].url.split('br')[1].split('.')[0];
 
         }
         if(result.mus[0].translate){

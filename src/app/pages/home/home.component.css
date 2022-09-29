@@ -2,8 +2,12 @@
   display: grid;
   justify-content: space-around;
   background-color: rgb(141, 133, 133);
-
 }
+
+#main {
+background-color: rgb(141, 133, 133);
+}
+
 #imagem_topo {
   position: absolute;
 }
