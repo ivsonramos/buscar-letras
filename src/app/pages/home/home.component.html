@@ -19,12 +19,12 @@
 </div>
 
 <body>
-  <main>
+
 
   <h1>{{artistMusic}}  {{titleMusic}}</h1>
 
   <div *ngIf="img" class="artist">
-    <img class="img" [src]="img" height="420" width="360">
+    <img id="img" [src]="img">
     <p><a [href]="link">Cifra</a> &nbsp; <a [href]="musicPlayer">Musica</a></p>
   </div>
 
@@ -43,6 +43,4 @@
   </div>
 
 
-  </main>
 </body>
-

@@ -1,14 +1,17 @@
+
+
 #cabeca {
   display: grid;
   justify-content: space-around;
   background-color: rgb(141, 133, 133);
 }
 
-#main {
-background-color: rgb(141, 133, 133);
-}
 
 #imagem_topo {
+  height: 189px;
+  width: 280px;
+  min-width:100px;
+  max-width: 380px;
   position: absolute;
 }
 
@@ -23,11 +26,23 @@ background-color: rgb(141, 133, 133);
 }
 
 #texto_original {
-  width:290px;
-  float:left
+  width:100px;
+  min-width:290px;
+  max-width: 500px;
+  float:left;
+  margin-right: auto;
 }
 
 #texto_traduzido {
-  width:290px;
+  width:100px;
+  min-width:290px;
+  max-width: 500px;
   float:right;
+}
+
+#img {
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+  border: 2px solid black;
 }
