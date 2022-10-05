@@ -31,6 +31,7 @@
   max-width: 500px;
   float:left;
   margin-right: auto;
+  background-color: aqua;
 }
 
 #texto_traduzido {
@@ -38,6 +39,11 @@
   min-width:290px;
   max-width: 500px;
   float:right;
+  background-color: blue;
+}
+
+.corpo {
+  background-color: yellow;
 }
 
 #img {
@@ -45,4 +51,5 @@
   width: 220px;
   border-radius: 50%;
   border: 2px solid black;
+  left: 500px;
 }
