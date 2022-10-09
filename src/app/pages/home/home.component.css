@@ -6,6 +6,10 @@
   background-color: rgb(141, 133, 133);
 }
 
+#corpo {
+  background-color: rgb(141, 133, 133);
+}
+
 
 #imagem_topo {
   height: 189px;
@@ -25,26 +29,27 @@
   text-align: center;
 }
 
+
 #texto_original {
-  width:100px;
+  width:990px;
   min-width:290px;
   max-width: 500px;
   float:left;
   margin-right: auto;
-  background-color: aqua;
+  background-color: rgb(141, 133, 133);
+  display: inline-grid;
 }
 
 #texto_traduzido {
-  width:100px;
+  width:990px;
   min-width:290px;
   max-width: 500px;
   float:right;
-  background-color: blue;
+  background-color: rgb(141, 133, 133);
+  display: inline-grid;
 }
 
-.corpo {
-  background-color: yellow;
-}
+
 
 #img {
   height: 220px;
@@ -52,4 +57,9 @@
   border-radius: 50%;
   border: 2px solid black;
   left: 500px;
+}
+
+#reproduzir {
+  display: inline-grid;
+
 }

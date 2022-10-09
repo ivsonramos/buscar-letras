@@ -20,7 +20,7 @@
 
 <body>
 
-  <main id="corpo">
+  <div id="corpo">
 
 
   <h1>{{artistMusic}}  {{titleMusic}}</h1>
@@ -30,19 +30,14 @@
     <p><a [href]="link">Cifra</a> &nbsp; <a [href]="musicPlayer">Musica</a></p>
   </div>
 
+    <pre id="texto_original">{{lyricMusic}}</pre>
+    <pre id="texto_traduzido">{{translateMusic}}</pre>
 
   <div *ngIf="musicPlayer" class="reproduzir">
     <iframe width="426" height="240" [src]="musicPlayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <audio [src]="musicPlayer" autoplay controls loop></audio>
   </div>
 
-  <div id="texto_original">
-    <pre>{{lyricMusic}}</pre>
-  </div>
-
-  <div id="texto_traduzido">
-    <pre>{{translateMusic}}</pre>
-  </div>
-
-</main>
+</div>
 
 </body>
