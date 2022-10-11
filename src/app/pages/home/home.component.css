@@ -22,13 +22,19 @@
 #busca_artista {
   display: inline-grid;
   text-align: center;
+  border-radius: 15px;
 }
 
 #busca_musicas {
   display: inline-grid;
   text-align: center;
+  border-radius: 15px;
 }
 
+#buscar {
+  margin-left: 95px;
+  border-radius: 15px;
+}
 
 #texto_original {
   width:990px;
