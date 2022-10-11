@@ -4,6 +4,12 @@
   display: grid;
   justify-content: space-around;
   background-color: rgb(141, 133, 133);
+  font-family: "Times New Roman", Times, serif;
+}
+
+#titulo {
+  margin-left: -40px;
+  margin-top: 40px;
 }
 
 #corpo {
@@ -17,22 +23,27 @@
   min-width:100px;
   max-width: 380px;
   position: absolute;
+  display: inline-grid;
 }
 
 #busca_artista {
   display: inline-grid;
   text-align: center;
   border-radius: 15px;
+  width:5px;
+
 }
 
 #busca_musicas {
   display: inline-grid;
   text-align: center;
   border-radius: 15px;
+  width: 5px;
+
 }
 
 #buscar {
-  margin-left: 95px;
+  margin-left: 55px;
   border-radius: 15px;
 }
 
