@@ -18,8 +18,8 @@
 
 
 #imagem_topo {
-  height: 189px;
-  width: 280px;
+  height: 20%;
+  width: 20%;
   min-width:100px;
   max-width: 380px;
   position: absolute;
@@ -79,4 +79,20 @@
 #reproduzir {
   display: inline-grid;
 
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    color: blue;
+  }
+
+  #imagem_topo {
+    height: 20%;
+    width: 20%;
+    min-width:20%;
+    max-width: 20%;
+    position: absolute;
+    display: inline-grid;
+
+}
 }
