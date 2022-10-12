@@ -48,9 +48,9 @@
 }
 
 #texto_original {
-  width:990px;
-  min-width:290px;
-  max-width: 500px;
+  width:40%;
+  min-width:40%;
+  max-width: 100%;
   float:left;
   margin-right: auto;
   background-color: rgb(141, 133, 133);
@@ -58,9 +58,9 @@
 }
 
 #texto_traduzido {
-  width:990px;
-  min-width:290px;
-  max-width: 500px;
+  width:40%;
+  min-width:40%;
+  max-width: 100%;
   float:right;
   background-color: rgb(141, 133, 133);
   display: inline-grid;
